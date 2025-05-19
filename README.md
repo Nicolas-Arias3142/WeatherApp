@@ -1,50 +1,64 @@
-# Welcome to your Expo app 👋
+<h1 align="center">Expo Weather App</h1>
+<p align="center"><strong>Demo Weather App using Expo + React Native</strong>
+</p>
+<div align="center">
+<img src="./assets/images/WeatherApp1.png" width="170" alt="App demo" />
+<img src="./assets/images/WeatherApp2.png" width="170" alt="App demo" />
+<img src="./assets/images/WeatherApp3.png" width="170" alt="App demo" />
+</div>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<p align="center">
+  <img src="https://img.shields.io/badge/status-beta-yellow" />
+  <img src="https://img.shields.io/badge/license-MIT-green" />
+<img src="https://img.shields.io/badge/react--native-%5E0.73.0-blue" />
+<img src="https://img.shields.io/badge/expo-%5E49.0.0-blue" />
 
-## Get started
+</p>
 
-1. Install dependencies
+<p align="center">
+  <a href="#introduction">Introduction</a> · 
+  <a href="#installation">Installation</a> ·
+  <a href="#license">License</a> 
+</p>
 
-   ```bash
-   npm install
-   ```
+## Introduction
 
-2. Start the app
+A modern weather app that displays real-time weather information along with dynamic city images using the Google Maps API. Includes a personalized, persistent list of saved cities for quick access and tracking.
 
-   ```bash
-    npx expo start
-   ```
+## Installation
 
-In the output, you'll find options to open the app in a
+This project requires **Node.js** installed on your machine.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 🧩 Step-by-Step Setup
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+1.  **Clone the repository**  
+    Follow [GitHub's cloning instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) or run:
+    ```bash
+    git clone https://github.com/Nicolas-Arias3142/WeatherApp.git
+    cd WeatherApp
+    ```
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+3.  **Set up your `.env` file**
 
-## Get a fresh project
+    Get [Places API](https://developers.google.com/maps/documentation/places/web-service/overview) Key from Google and get [Weather Api](https://www.weatherapi.com)
 
-When you're ready, run:
+    Copy `.env.example` and rename it to .env
 
-```bash
-npm run reset-project
-```
+    In the `.env` file, set the following values:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+    ```bash
+      EXPO_PUBLIC_API_WEATHER_KEY="Your weather api key"
+      EXPO_PUBLIC_API_PLACES_KEY="Your places api key"
+    ```
 
-## Learn more
+4.  **Start the app dev mode**
+    ```bash
+    npm run start
+    ```
 
-To learn more about developing your project with Expo, look at the following resources:
+## License
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This application is licensed under the [MIT license](https://github.com/Nicolas-Arias3142/WeatherApp/blob/main/LICENSE).
